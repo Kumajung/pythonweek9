@@ -42,3 +42,18 @@ if p_value < alpha:
     print("ผลการทดสอบ: มีความแตกต่างกันอย่างมีนัยสำคัญทางสถิติระหว่างคะแนนสอบของห้อง A และ B")
 else:
     print("ผลการทดสอบ: ไม่มีความแตกต่างกันอย่างมีนัยสำคัญทางสถิติระหว่างคะแนนสอบของห้อง A และ B")
+
+# สร้าง scatter plot ใหม่โดยใช้ภาษาอังกฤษ
+plt.figure(figsize=(8, 5))
+plt.scatter(["A"] * len(group_A), group_A, color='blue', label="Class A")
+plt.scatter(["B"] * len(group_B), group_B, color='red', label="Class B")
+
+# ปรับข้อความเป็นภาษาอังกฤษ
+plt.xlabel("Class")
+plt.ylabel("Exam Scores")
+plt.title("Scatter Plot of Exam Scores for Class A and B")
+plt.legend()
+plt.grid(True, linestyle="--", alpha=0.6)
+
+# แสดงกราฟที่อัปเดต
+plt.show()
