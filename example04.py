@@ -7,6 +7,10 @@ import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.linear_model import QuantileRegressor
 
+import warnings
+
+# กำจัดคำเตือน
+warnings.filterwarnings('ignore')
 # สร้างข้อมูล
 np.random.seed(0)
 data = {
