@@ -24,6 +24,7 @@
 
 import numpy as np
 import scipy.stats as stats
+import matplotlib.pyplot as plt
 
 # ข้อมูลคะแนนสอบของทั้งสองกลุ่ม
 group_A = np.array([85, 90, 88, 92, 75, 78, 80, 95, 85, 87])
